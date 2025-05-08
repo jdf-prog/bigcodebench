@@ -220,7 +220,7 @@ docker run -v $(pwd):/app bigcodebench/bigcodebench-evaluate:latest --execution 
 First, install the dependencies for BigCodeBench:
 
 ```bash
-pip install -r https://raw.githubusercontent.com/bigcode-project/bigcodebench/main/Requirements/requirements-eval.txt
+uv pip install -r https://raw.githubusercontent.com/bigcode-project/bigcodebench/main/Requirements/requirements-eval.txt
 ```
 
 Then, run the evaluation:

@@ -130,6 +130,17 @@ bigcodebench.evaluate \
   --backend [vllm|openai|anthropic|google|mistral|hf|hf-inference]
 ```
 
+```bash
+bigcodebench.evaluate \
+  --model VerlTool/acecoder-fsdp-qwen_qwen2.5-coder-1.5b-grpo-n16-b128-t1.0-lr1e-6-69k-sys3-250-step \
+  --execution local \
+  --split instruct \
+  --subset hard \
+  --backend openai \
+  --bs 1024 \
+  --base_url http://0.0.0.0:5000 
+```
+
 - All the resulted files will be stored in a folder named `bcb_results`.
 - The generated code samples will be stored in a file named `[model_name]--bigcodebench-[instruct|complete]--[backend]-[temp]-[n_samples]-sanitized_calibrated.jsonl`.
 - The evaluation results will be stored in a file named `[model_name]--bigcodebench-[instruct|complete]--[backend]-[temp]-[n_samples]-sanitized_calibrated_eval_results.json`.
