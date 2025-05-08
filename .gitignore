@@ -170,3 +170,4 @@ bigcodebench/_version.py
 *.jsonl
 inspect/
 *.zip
+/bcb_results
